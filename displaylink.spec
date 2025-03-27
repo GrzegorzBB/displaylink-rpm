@@ -1,5 +1,5 @@
 %{!?_daemon_version:%global _daemon_version 6.1.0-17}
-%{!?_version:%global _version 1.14.8}
+%{!?_version:%global _version 1.14.9}
 %{!?_release:%global _release 1}
 
 # Disable RPATH since DisplayLinkManager contains this.
@@ -260,6 +260,9 @@ fi
 %systemd_postun_with_restart displaylink-driver.service
 
 %changelog
+* Thu Mar 27 2025 Grzegorz Bialek <gp.bialek@gmail.com> 1.14.9-1
+- Update to the latest evdi release v1.14.9
+
 * Wed Feb 26 2025 Michael L. young <elgueromexicano@gmail.com> 1.14.8-1
 - Update to the latest evdi release v1.14.8
 - Add a conflicts for older libevdi installs
